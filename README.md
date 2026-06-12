@@ -41,5 +41,5 @@ Each machine writeup contains:
 - Wireshark · tcpdump
 
 ## Connect
-- LinkedIn: [your-linkedin-url]
-- TryHackMe Profile: [your-thm-url]
+- LinkedIn: https://www.linkedin.com/in/shehroz-majeed-a46a012b8/
+- TryHackMe Profile: https://tryhackme.com/p/shehrozmajeed.sec
