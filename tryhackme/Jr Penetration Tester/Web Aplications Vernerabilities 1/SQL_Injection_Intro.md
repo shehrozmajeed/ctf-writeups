@@ -218,5 +218,3 @@ Steps taken:
 - [ ] TryHackMe Jr Penetration Tester path
 
 ---
-
-*Part of my 6-month cybersecurity portfolio — [github.com/your-username](https://github.com/your-username)*
