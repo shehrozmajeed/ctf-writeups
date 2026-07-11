@@ -1,5 +1,6 @@
 {
-  "buildCommand": "pip3 install --user -r requirements.txt && mkdir -p docs && ln -sf ../tryhackme docs/tryhackme && ln -sf ../index.md docs/index.md && ln -sf ../assets docs/assets && python3 -m mkdocs build",
+  "framework": null,
+  "buildCommand": "mkdir -p docs && ln -sf ../tryhackme docs/tryhackme && ln -sf ../index.md docs/index.md && ln -sf ../assets docs/assets && python3 -m mkdocs build",
   "outputDirectory": "site",
   "cleanUrls": true
 }
