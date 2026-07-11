@@ -90,4 +90,4 @@ Threats that stem from **how end users (or malicious actors posing as users) int
 - **Defense-in-depth applies here just as it does in traditional security**: no single control (input filtering, output sanitization, least privilege, monitoring) is sufficient on its own.
 
 ---
-*Part of my AI Security learning path on TryHackMe. See also: [Securing AI Systems](./05-securing-ai-systems.md), [Prompt Engineering](./03-prompt-engineering.md), [AI/ML Security Threats](./01-ai-ml-security-threats.md)*
+*Part of my AI Security learning path on TryHackMe. See also: [Securing AI Systems](./01-securing-ai-systems.md), [Prompt Engineering](../01-Ai Fundamentals/03-prompt-engineering.md), [AI/ML Security Threats](../01-Ai Fundamentals/01-ai-ml-security-threats.md)*

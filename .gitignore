@@ -1,0 +1,20 @@
+# MkDocs build directory
+site/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Dynamic build helper folder
+docs/
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Operating system files
+.DS_Store
+Thumbs.db

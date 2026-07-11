@@ -1,0 +1,45 @@
+name: Deploy MkDocs to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Crucial: fetch full git log for the git-revision-date plugin
+
+      - name: Configure Git Credentials
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt
+
+      - name: Recreate Symlinks for Build
+        run: |
+          mkdir -p docs
+          ln -sf ../tryhackme docs/tryhackme
+          ln -sf ../index.md docs/index.md
+          ln -sf ../assets docs/assets
+
+      - name: Deploy to GitHub Pages
+        run: |
+          mkdocs gh-deploy --force

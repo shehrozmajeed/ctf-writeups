@@ -1,0 +1,105 @@
+site_name: "Shehroz's Cybersecurity Notes"
+site_description: "Personal learning notes, cybersecurity concepts, and commands documented from TryHackMe and SOC Level 1 paths."
+site_author: "Shehroz Majeed"
+site_url: "https://shehrozmajeed.github.io/ctf-writeups/"
+
+# Repository integration
+repo_name: "shehrozmajeed/ctf-writeups"
+repo_url: "https://github.com/shehrozmajeed/ctf-writeups"
+edit_uri: "edit/main/"
+
+# Document configuration
+docs_dir: "docs"
+
+# Exclude configuration files, hidden folders, and environments from building
+exclude_docs: |
+  .git/
+  .github/
+  .venv/
+  venv/
+  site/
+  requirements.txt
+  mkdocs.yml
+  README.md
+
+# Theme configuration
+theme:
+  name: material
+  font:
+    text: Outfit
+    code: Fira Code
+  palette:
+    # Light Mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark Mode (Sleek Cybersecurity slate/black theme)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.annotate
+
+# Assets
+extra_css:
+  - assets/css/custom.css
+
+extra_javascript:
+  - assets/js/custom.js
+
+# Markdown parsing & extensions
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+# Plugins
+plugins:
+  - search
+  - git-revision-date-localized:
+      type: date
+      locale: en
+
+# Footer Customization
+copyright: 'Copyright &copy; 2026 <a href="https://github.com/shehrozmajeed" target="_blank" rel="noopener">Shehroz Majeed</a> | All Rights Reserved'

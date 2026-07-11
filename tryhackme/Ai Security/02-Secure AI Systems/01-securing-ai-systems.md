@@ -40,4 +40,4 @@ This room focuses on mapping AI system architecture, identifying attack surfaces
 This room tied together architectural thinking with structured threat frameworks (OWASP, MITRE ATLAS), reinforcing that securing AI systems requires the same rigor as securing traditional software — mapping trust boundaries, cataloging threats systematically, and applying defense-in-depth design patterns — while also accounting for AI-specific risks like prompt injection and model-level exploitation.
 
 ---
-*Part of my AI Security learning path on TryHackMe. See also: [AI/ML Security Threats](./01-ai-ml-security-threats.md), [AI Models & Data](./02-ai-models-and-data.md), [Prompt Engineering](./03-prompt-engineering.md), [AI Forensics](./04-ai-forensics.md)*
+*Part of my AI Security learning path on TryHackMe. See also: [AI/ML Security Threats](../01-Ai Fundamentals/01-ai-ml-security-threats.md), [AI Models & Data](../01-Ai Fundamentals/02-ai-models-and-data.md), [Prompt Engineering](../01-Ai Fundamentals/03-prompt-engineering.md), [AI Forensics](../01-Ai Fundamentals/04-ai-forensics.md)*
