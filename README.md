@@ -1,45 +1,49 @@
-# CTF Writeups
+# 🏴 CTF Writeups
 
-Walkthroughs of machines and challenges from TryHackMe and Hack The Box.
-Documented to reinforce methodology and demonstrate hands-on penetration 
-testing skills.
+Walkthroughs of machines and challenges from TryHackMe and Hack The Box, documented to reinforce methodology and demonstrate hands-on penetration testing skills.
 
 ## About
-Each writeup follows a structured approach — reconnaissance, enumeration, 
-exploitation, and privilege escalation. Written in my own words after 
-completing each machine independently.
+
+Each writeup follows a structured approach — reconnaissance, enumeration, exploitation, and privilege escalation — and is written independently, in my own words, after completing each machine.
 
 ## Machines Completed
 
 ### TryHackMe
-| Machine          | Difficulty | Category        | Date       |
-|------------------|------------|-----------------|------------|
-| Pickle Rick      | Easy       | Web / Linux     | DD-MM-YYYY |
-| Vulnversity      | Easy       | Web / PrivEsc   | DD-MM-YYYY |
-| Basic Pentesting | Easy       | Enum / Cracking | DD-MM-YYYY |
-| Game Zone        | Medium     | SQLi / SSH      | DD-MM-YYYY |
-| Skynet           | Medium     | SMB / RFI       | DD-MM-YYYY |
+
+| Machine | Difficulty | Category |
+|---|---|---|
+| Pickle Rick | Easy | Web / Linux |
+| Vulnversity | Easy | Web / Privilege Escalation |
+| Basic Pentesting | Easy | Enumeration / Credential Cracking |
+| Game Zone | Medium | SQL Injection / SSH |
+| Skynet | Medium | SMB / Remote File Inclusion |
 
 ### Hack The Box
-| Machine | Difficulty | Category | Date |
-|---------|------------|----------|------|
-| —       | —          | —        | —    |
+
+*Writeups in progress — will be added as machines are completed.*
 
 ## Writeup Format
-Each machine writeup contains:
-- Target overview and difficulty
-- Reconnaissance — nmap output and findings
-- Enumeration — services explored and why
-- Exploitation — vulnerability, tool, and payload
-- Privilege escalation — misconfiguration found and method used
-- Key takeaway — one thing learned from this machine
+
+Each machine writeup includes:
+
+- **Target Overview** — machine name and difficulty
+- **Reconnaissance** — Nmap scan output and initial findings
+- **Enumeration** — services explored and reasoning
+- **Exploitation** — vulnerability identified, tool used, and payload
+- **Privilege Escalation** — misconfiguration found and method used
+- **Key Takeaway** — one lesson learned from the machine
 
 ## Tools Used
-- Nmap · Gobuster · Burp Suite
-- Metasploit · Netcat · Hydra
-- LinPEAS · John the Ripper
-- Wireshark · tcpdump
+
+| Category | Tools |
+|---|---|
+| Scanning & Enumeration | Nmap, Gobuster |
+| Exploitation | Burp Suite, Metasploit, Netcat |
+| Credential Attacks | Hydra, John the Ripper |
+| Privilege Escalation | LinPEAS |
+| Traffic Analysis | Wireshark, tcpdump |
 
 ## Connect
-- LinkedIn: https://www.linkedin.com/in/shehroz-majeed-a46a012b8/
-- TryHackMe Profile: https://tryhackme.com/p/shehrozmajeed.sec
+
+- **LinkedIn:** [linkedin.com/in/shehroz-majeed-a46a012b8](https://www.linkedin.com/in/shehroz-majeed-a46a012b8/)
+- **TryHackMe:** [tryhackme.com/p/shehrozmajeed](https://tryhackme.com/p/shehrozmajeed)
